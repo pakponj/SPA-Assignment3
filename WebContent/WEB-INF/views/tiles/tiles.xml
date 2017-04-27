@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Welcome to index"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/pages/index.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Add New Student Page -->
+	<definition name="addNewStudent" extends="base-definition">
+		<put-attribute name="title" value="Add new student page"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/pages/addNewStudent.jsp"></put-attribute>
+	</definition>
+	
+	<!-- View Students Page -->
+	<definition name="viewStudents" extends="base-definition">
+		<put-attribute name="title" value="View Students Page"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/pages/viewStudents.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Edit Student Page -->
+	<definition name="editStudent" extends="base-definition">
+		<put-attribute name="title" value="Edit Student Page"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/pages/editStudent.jsp"></put-attribute>
+	</definition>
+	
+	
+</tiles-definitions>
