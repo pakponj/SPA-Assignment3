@@ -47,7 +47,7 @@ public class AppController {
 			student.setId(studentJDBCTemplate.listStudents().size() + 1);
 			System.out.println(student.toString());
 			studentJDBCTemplate.create(student.getName(), student.getGpax(), student.getAmbition());
-			return new ModelAndView("redirect:home", "message", "Succesfully Add New Student");
+			return new ModelAndView("home", "message", "Succesfully Add New Student");
 		}
 		return new ModelAndView("addNewStudent", "message", "Invalid inputs!");
 	}
