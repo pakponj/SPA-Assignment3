@@ -12,7 +12,7 @@
 	</div>
 	<div class="form-group">
 		<form:label path="ambition" >Ambition</form:label>
-		<form:input path="ambition" class="form-control" placeholder="ambition" "/>
+		<form:input path="ambition" class="form-control" placeholder="ambition"/>
 	</div>
 	<button type="submit" class="btn btn-default">Save</button>
 </form:form>
